@@ -34,8 +34,23 @@
         </nav>
     </div>
     <!-- navigation desktop -->
-    <div id="app">
-
+    <div class="uk-text-center" id="app">
+        <section v-if="errored">
+            <p>Pedimos desculpas, não estamos conseguindo recuperar as informações no momento. Por favor, tente
+                novamente mais tarde.</p>
+        </section>
+        <div v-else>
+            <div class="container">
+                <div  v-for="(potion, index) in potions_list" :key="index">
+                    <div class="img">
+                        <!-- mostrar imagem aqui, se necessário -->
+                    </div> <!-- /image -->
+             
+                    </div> <!-- /bottom-text -->
+                </div>
+            </div>
+        </div>
+    </div>
 
     </div>
 
