@@ -1,4 +1,4 @@
-const url = 'https://cors-anywhere.herokuapp.com/http://www.portaltransparencia.gov.br/api-de-dados/bolsa-familia-por-municipio?mesAno=202004&codigoIbge=5300108&pagina=1';
+let url = 'https://cors-anywhere.herokuapp.com/http://www.portaltransparencia.gov.br/api-de-dados/bolsa-familia-por-municipio?mesAno=202004&codigoIbge=5300108&pagina=1';
 new Vue({
     el: '#app',
     data() {
@@ -46,12 +46,16 @@ new Vue({
             ],
         }
     },
-    // mounted: function () {
-    //     this.getAllBenefits();
-    // },
+
+    methods: {
+        splitSelected() {
+            const result = this.selected.split("/")
+            this.state = result[0];
+            this.number = result[1];
+        },
+    },
     mounted() {
         this.splitSelected();
-        this.triggerUrl();
         let headers = {
             'Accept': '*/*',
             'chave-api-dados': 'cec73fb24c54ff134d2053da6b471467'
@@ -61,7 +65,6 @@ new Vue({
             .then((response) => {
                 this.benefits = response.data;
                 const { benefits } = response.data;
-                // this.govBenefits = benefits;
                 console.log(response.data);
             })
             .catch(error => {
@@ -70,15 +73,6 @@ new Vue({
             })
             .finally(() => this.loading = false)
     },
-    methods: {
-        splitSelected() {
-            const result = this.selected.split("/")
-            this.state = result[0];
-            this.number = result[1];
-        },
-        triggerUrl() {
 
-        }
-    }
 
 })
