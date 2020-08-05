@@ -59,8 +59,8 @@ new Vue({
             .get(url, { headers })
             .then((response) => {
                 const { benefits } = response.data;
-                this.gov_benefitsF = benefits;
-                console.log(benefits);
+                this.gov_benefits = quantidadeBeneficiados;
+                console.log(quantidadeBeneficiados);
             })
             .catch(error => {
                 console.log(error)
