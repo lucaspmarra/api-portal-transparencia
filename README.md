@@ -20,6 +20,13 @@ O projeto pode ser acessado pelo link: [Omega Sistemas - Portal da Transparênci
 - Liberação do bloqueio de CORS;
 - Erro 429 - Too Many Requests;
 
+
+## v2.1
+
+- console.log(response.data) agora retorna os dados da api;
+- em desenvolvimento = alterar url do endpoint com v-model do select de data e código ibge;
+
+
 # Estrutura do projeto:
 ```
 .
