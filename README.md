@@ -14,6 +14,10 @@ O projeto pode ser acessado pelo link: (Omega Sistemas - Portal da Transparênci
 - Navbar desktop e responsivo para mobile com breakpoint de 960px;
 - Form responsivo;
 
+## v2
+
+- Liberação do bloqueio de CORS;
+- Erro 429 - Too Many Requests;
 
 # Estrutura do projeto:
 ```
