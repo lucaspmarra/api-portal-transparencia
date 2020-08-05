@@ -86,11 +86,13 @@
                 <p>Pedimos desculpas, não estamos conseguindo recuperar as informações no momento. Por favor, tente
                     novamente mais tarde.</p>
             </section>
-            <div v-else>
-                <div v-for="(states, index) in gov_benefits" :key="index"></div>
-                <p>teste</p>
-                <p></p>
-            </div>
+            <section v-else>
+                <div v-else v-for="(states, index) in govBenefits" :key="index">
+                    <p>oi</p>
+                </div>
+
+            </section>
+
         </div>
     </div>
 

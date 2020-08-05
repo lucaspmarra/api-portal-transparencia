@@ -3,7 +3,7 @@ new Vue({
     el: '#app',
     data() {
         return {
-            gov_benefits: [],
+            govBenefits: [],
             loading: true,
             errored: false,
             selected: 'DistritoFederal/53',
@@ -59,8 +59,8 @@ new Vue({
             .get(url, { headers })
             .then((response) => {
                 const { benefits } = response.data;
-                this.gov_benefits = quantidadeBeneficiados;
-                console.log(quantidadeBeneficiados);
+                // this.govBenefits = benefits;
+                console.log(response);
             })
             .catch(error => {
                 console.log(error)
