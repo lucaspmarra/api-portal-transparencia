@@ -5,14 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=F, initial-scale=1.0">
     <title>Teste Front-End</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css" />
+
 </head>
 
 <body>
+    <!-- navigaion desktop -->
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+        <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+            <div class="uk-navbar-left">
+    
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">Home</a></li>
+                    <li>
+                        <a href="#">Item 2</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="#">Item 2 - Child</a></li>
+                                <li><a href="#">Item 2 - Child</a></li>
+                                <li><a href="#">Item 2 - Child</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Item 3</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- navigation desktop -->
     <div id="app">
 
 
     </div>
 
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script src="./js/app.js"></script>
