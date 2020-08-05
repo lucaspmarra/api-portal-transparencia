@@ -85,7 +85,7 @@
                 </div>
                 <div class="uk-width-1-2@s">
                     <select class="uk-select " id="form-stacked-select" v-model="dateSelected">
-                        <option v-for="option in dateOptions" v-bind:value="dateOptions.value">
+                        <option v-for="option in dateOptions" v-bind:value="option.value">
                             {{ option.text }}
                         </option>
                     </select>
