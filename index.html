@@ -16,8 +16,9 @@
 
     <!-- navigation off-canvas -->
     <!-- navigaion desktop -->
-    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
-        <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #sticky-navbar">
+        <nav class="uk-navbar-container uk-margin-bottom" uk-navbar
+            style="position: relative; z-index: 980; background-color: white; box-shadow: ;">
             <!-- uk-visible@m show content only in devices width of 960px and larger -->
             <div class="uk-navbar-left uk-visible@m">
                 <ul class="uk-navbar-nav">
@@ -65,7 +66,6 @@
             <p>Para visualizar quantas pessoas foram beneficiadas pelo bolsa família, por favor, selecione a
                 região abaixo seguido do mês de consulta:</p>
             <form class="uk-margin uk-grid-small" uk-grid>
-
                 <div class="uk-width-1-2@s">
                     <select class="uk-select" id="form-stacked-select" v-model="selected">
                         <option v-for="option in options" v-bind:value="option.value">
@@ -80,15 +80,18 @@
                         </option>
                     </select>
                 </div>
-
+                <button class="uk-button uk-button-danger uk-align-center uk-margin-top">Visualizar Dados</button>
             </form>
             <section v-if="errored">
                 <p>Pedimos desculpas, não estamos conseguindo recuperar as informações no momento. Por favor, tente
                     novamente mais tarde.</p>
             </section>
             <section v-else>
-                <div v-else v-for="(states, index) in govBenefits" :key="index">
-                    <p>oi</p>
+                <hr>
+                <div v-if="loading">Carregando...</div>
+                
+                <div v-else v-for="(benefits, index) in benefits" :key="index">
+                    <h4>{{benefits.quantidadeBeneficiados}} pessoas são beneficiárias do {{benefits.tipo.descricao}} no Estado de {{benefits.municipio.nomeIBGE}}</h4>
                 </div>
 
             </section>

@@ -23,8 +23,12 @@ O projeto pode ser acessado pelo link: [Omega Sistemas - Portal da Transparênci
 
 ## v2.1
 
-- console.log(response.data) agora retorna os dados da api;
-- em desenvolvimento = alterar url do endpoint com v-model do select de data e código ibge;
+- Console.log(response.data) agora retorna os dados da api;
+- Em desenvolvimento = alterar url do endpoint com v-model do select de data e código ibge;
+
+## v2.2
+- Dados agora retornam na tela dinamicamente usando v-for do vue;
+- Em desenvolvimento = alterar url do endpoint com v-model do select de data e código ibge;
 
 
 # Estrutura do projeto:
