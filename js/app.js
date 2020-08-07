@@ -39,9 +39,9 @@ new Vue({
             ],
             dateSelected: '202004',
             dateOptions: [
-                { text: 'Mês de Abril de 2020', value: '202004' },
-                { text: 'Mês de Maio de 2020', value: '202005' },
-                { text: 'Mês de Julho 2020', value: '202006' },
+                { text: 'Abril de 2020', value: '202004' },
+                { text: 'Maio de 2020', value: '202005' },
+                { text: 'Julho 2020', value: '202006' },
             ],
         }
     },
