@@ -37,11 +37,11 @@ new Vue({
                 { text: 'SE', value: '2800308' },
                 { text: 'TO', value: '1721000' }
             ],
-            dateSelected: '04',
+            dateSelected: '202004',
             dateOptions: [
-                { text: 'Mês de Abril', value: '202004' },
-                { text: 'Mês de Maio', value: '202005' },
-                { text: 'Mês de Julho', value: '202006' },
+                { text: 'Mês de Abril de 2020', value: '202004' },
+                { text: 'Mês de Maio de 2020', value: '202005' },
+                { text: 'Mês de Julho 2020', value: '202006' },
             ],
         }
     },
@@ -50,22 +50,21 @@ new Vue({
     },
     watch: {
         selected: function () {
-            this.getBenefits();
-            this.loading = true;
+            this.getBenefits()
+            this.loading = true
         },
-    //     dateSelected: function () {
-    //         this.getBenefits()
-    //     }
+        dateSelected: function () {
+            this.getBenefits()
+        }
     },
     methods: {
-
         getBenefits() {
             let headers = {
                 'Accept': '*/*',
                 'chave-api-dados': 'cec73fb24c54ff134d2053da6b471467'
             }
             axios
-                .get('https://cors-anywhere.herokuapp.com/http://www.portaltransparencia.gov.br/api-de-dados/bolsa-familia-por-municipio?mesAno=202004&codigoIbge=' + this.selected + '&pagina=1', { headers })
+                .get('https://cors-anywhere.herokuapp.com/http://www.portaltransparencia.gov.br/api-de-dados/bolsa-familia-por-municipio?mesAno=' + this.dateSelected + '&codigoIbge=' + this.selected + '&pagina=1', { headers })
                 .then((response) => {
                     this.benefits = response.data;
                     const { benefits } = response.data;

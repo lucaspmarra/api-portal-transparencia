@@ -44,6 +44,9 @@ O projeto pode ser acessado pelo link: [Omega Sistemas - Portal da Transparênci
 ## v2.5
 - Animação de carregamento ao mudar de Estado;
 
+## v2.6
+- Teste para a selação do mês
+
 # Estrutura do projeto:
 ```
 .
