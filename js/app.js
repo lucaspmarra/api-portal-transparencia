@@ -50,7 +50,8 @@ new Vue({
     },
     watch: {
         selected: function () {
-            this.getBenefits()
+            this.getBenefits();
+            this.loading = true;
         },
     //     dateSelected: function () {
     //         this.getBenefits()

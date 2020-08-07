@@ -91,7 +91,7 @@ c<!DOCTYPE html>
             </section>
             <section v-else>
                 <hr>
-                <div v-if="loading">Carregando...</div>
+                <div v-if="loading" uk-spinner></div>
                 <!-- return api data on html -->
                 <div v-else v-for="(option, municipio, tipo) in benefits" :key="option.value">
                   <h3>Em {{option.municipio.nomeIBGE}}, há {{option.quantidadeBeneficiados}} beneficiados no {{option.tipo.descricao}}</h3>

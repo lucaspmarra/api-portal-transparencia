@@ -41,6 +41,9 @@ O projeto pode ser acessado pelo link: [Omega Sistemas - Portal da Transparênci
 ## v2.4
 - Retorno dos dados funcionado corretamente com o Estado;
 
+## v2.5
+- Animação de carregamento ao mudar de Estado;
+
 # Estrutura do projeto:
 ```
 .
