@@ -35,6 +35,8 @@ O projeto pode ser acessado pelo link: [Omega Sistemas - Portal da Transparênci
 - Teste na seleção de data juntamente com a UF;
 - Não possível testar localmente, erro 429, Too many requests;
 
+## v2.3
+- Retornando array da api;
 
 # Estrutura do projeto:
 ```
