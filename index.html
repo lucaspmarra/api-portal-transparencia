@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+c<!DOCTYPE html>
 <html lang="pt">
 
 <head>
@@ -82,7 +82,7 @@
                         </option>
                     </select>
                 </div>
-                <button class="uk-button uk-button-danger uk-align-center uk-margin-top">Visualizar Dados</button>
+         <!-- <button class="uk-button uk-button-danger uk-align-center uk-margin-top">Visualizar Dados</button> -->
             </form>
             <!-- show error message if api get fails-->
             <section v-if="errored">
@@ -93,8 +93,8 @@
                 <hr>
                 <div v-if="loading">Carregando...</div>
                 <!-- return api data on html -->
-                <div v-else v-for="option in benefits" :key="option.value">
-                  <p>Em {{option.nomeIBGE}}, há {{option.quantidadeBeneficiados}} no {{option.descricao}}</p>
+                <div v-else v-for="(option, municipio, tipo) in benefits" :key="option.value">
+                  <h3>Em {{option.municipio.nomeIBGE}}, há {{option.quantidadeBeneficiados}} beneficiados no {{option.tipo.descricao}}</h3>
                 </div>
 
             </section>

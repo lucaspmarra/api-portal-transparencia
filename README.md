@@ -38,6 +38,9 @@ O projeto pode ser acessado pelo link: [Omega Sistemas - Portal da Transparênci
 ## v2.3
 - Retornando array da api;
 
+## v2.4
+- Retorno dos dados funcionado corretamente com o Estado;
+
 # Estrutura do projeto:
 ```
 .
