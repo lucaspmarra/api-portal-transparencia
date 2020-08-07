@@ -55,6 +55,7 @@ new Vue({
         },
         dateSelected: function () {
             this.getBenefits()
+            this.loading = true
         }
     },
     methods: {
