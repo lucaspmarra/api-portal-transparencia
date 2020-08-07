@@ -93,8 +93,8 @@
                 <hr>
                 <div v-if="loading">Carregando...</div>
                 <!-- return api data on html -->
-                <div v-else v-for="(benefits, index) in benefits" :key="index">
-                    <h4>{{benefits.quantidadeBeneficiados}} pessoas são beneficiárias do {{benefits.tipo.descricao}} no Estado de {{benefits.municipio.nomeIBGE}}</h4>
+                <div v-else v-for="option in benefits" :key="option.value">
+                    {{option}}
                 </div>
 
             </section>

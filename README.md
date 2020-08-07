@@ -28,8 +28,12 @@ O projeto pode ser acessado pelo link: [Omega Sistemas - Portal da Transparênci
 
 ## v2.2
 - Dados agora retornam na tela dinamicamente usando v-for do vue;
-- Em desenvolvimento = alterar url do endpoint com v-model do select de data e código ibge;
+- Em desenvolvimento = alterar url do endpoint com v-model do select de data e código ibge;  
 
+## v2.3
+- É possível agora selecionar a UF e resgatar os dados na drop list;
+- Teste na seleção de data juntamente com a UF;
+- Não possível testar localmente, erro 429, Too many requests;
 
 # Estrutura do projeto:
 ```
