@@ -18,7 +18,7 @@
     <!-- navigaion desktop -->
     <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #sticky-navbar">
         <nav class="uk-navbar-container uk-margin-bottom" uk-navbar
-            style="position: relative; z-index: 980; background-color: white; box-shadow: ;">
+            style="position: relative; z-index: 980; background-color: white;">
             <!-- uk-visible@m show content only in devices width of 960px and larger -->
             <div class="uk-navbar-left uk-visible@m">
                 <ul class="uk-navbar-nav">
@@ -94,7 +94,7 @@
                 <div v-if="loading">Carregando...</div>
                 <!-- return api data on html -->
                 <div v-else v-for="option in benefits" :key="option.value">
-                    {{option}}
+                    {{option.quantidadeBeneficiados}}
                 </div>
 
             </section>
