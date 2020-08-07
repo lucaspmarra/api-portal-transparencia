@@ -94,7 +94,7 @@
                 <div v-if="loading">Carregando...</div>
                 <!-- return api data on html -->
                 <div v-else v-for="option in benefits" :key="option.value">
-                    {{option.quantidadeBeneficiados}}
+                  <p>Em {{option.nomeIBGE}}, há {{option.quantidadeBeneficiados}} no {{option.descricao}}</p>
                 </div>
 
             </section>
