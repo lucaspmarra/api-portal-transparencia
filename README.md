@@ -1,7 +1,7 @@
 # Inicio do projeto
 Primeiro commit com index.html e pastas respectivas.
 
-O projeto pode ser acessado pelo link: [Omega Sistemas - Portal da Transparência](https://lucaspmarra.github.io/omegasistemas-teste-front-end/)
+O projeto pode ser acessado pelo link: [Consulta Portal da Transparência](https://lucaspmarra.github.io/omegasistemas-teste-front-end/)
 
 ## v1.0
 
@@ -45,7 +45,7 @@ O projeto pode ser acessado pelo link: [Omega Sistemas - Portal da Transparênci
 - Animação de carregamento ao mudar de Estado;
 
 ## v2.6
-- Teste para a selação do mês
+- Teste para a seleção do mês
 
 # Estrutura do projeto:
 ```
