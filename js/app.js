@@ -190,7 +190,7 @@ new Vue({
       };
       axios
         .get(
-          "https://cors-anywhere.herokuapp.com/http://www.portaltransparencia.gov.br/api-de-dados/bolsa-familia-por-municipio?codigoIbge=" + this.selected + "&mesAno=" + this.dateSelected + "&pagina=1",
+          "https://cors-anywhere.herokuapp.com/https://api.portaldatransparencia.gov.br/api-de-dados/bolsa-familia-por-municipio?codigoIbge=" + this.selected + "&mesAno=" + this.dateSelected + "&pagina=1",
           // "https://cors-anywhere.herokuapp.com/http://www.portaltransparencia.gov.br/api-de-dados/bolsa-familia-por-municipio?mesAno=" + this.dateSelected + "&codigoIbge=" + this.selected + "&pagina=1", 
           {
             headers
