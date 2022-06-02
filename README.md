@@ -1,7 +1,7 @@
 # Inicio do projeto
 Primeiro commit com index.html e pastas respectivas.
 
-O projeto pode ser acessado pelo link: [Consulta Portal da Transparência](https://lucaspmarra.github.io/omegasistemas-teste-front-end/)
+O projeto pode ser acessado pelo link: [Consulta Portal da Transparência](https://lucaspmarra.github.io/api-portal-transparencia/)
 
 ## v1.0
 
